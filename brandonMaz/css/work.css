@@ -1,0 +1,38 @@
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+.portfolio_item {
+    background: var(--clr-accent);
+    overflow: hidden;
+    transition: transform 500ms ease-in-out;
+    filter: var(--isl);
+    border-radius: 5px;
+}
+
+.portfolio_item:hover {
+    transform: scale(1.10);
+}
+
+.portfolio_item:focus {
+    position: relative;
+    transform: scale(1.120);
+}
+
+.portfolio_img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+}
+
+.portfolio_img:hover,
+.portfolio_item:focus .portfolio_img {
+    transform: scale(1.2);
+    opacity: .5;
+}

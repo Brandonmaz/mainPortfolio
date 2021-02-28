@@ -1,0 +1,51 @@
+.intro {
+    position: relative;
+}
+
+.intro_img,
+.portfolio-intro_img {
+    filter: var(--is);
+}
+
+.section_subtitle-intro {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro_img {
+        grid-area: img;
+        min-width: 350px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .portfolio-intro_img {
+        grid-area: img;
+        min-width: 450px;
+        position: relative;
+        padding: 10px;
+    }
+
+    .section_subtitle-intro {
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
