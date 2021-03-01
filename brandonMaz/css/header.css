@@ -120,3 +120,30 @@ a {
     transform: rotate(-135deg);
     margin-top: 0;
 }
+
+@media (max-width: 600px) {
+    .navigation li {
+        font-size: 11px;
+        margin: 0 0px 0 -15px;
+    }
+
+    .navigation {
+        margin: .5em .5em 0 0;
+    }
+
+    .logo {
+        max-width: 35px;
+        filter: drop-shadow(1px 1px 3px rgb(156, 156, 156));
+        margin: .5em;
+    }
+
+    .nav-wrapper.active ul {
+        width: 300px;
+    }
+
+    .nav-toggler::before,
+    .nav-toggler::after {
+        width: 20px;
+        height: 3px;
+    }
+}
