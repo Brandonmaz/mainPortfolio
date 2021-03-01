@@ -11,7 +11,8 @@
 }
 
 .portfolio_item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
+    z-index: 2;
     overflow: hidden;
     transition: transform 500ms ease-in-out;
     filter: var(--isl);

@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    background: var(--clr-light);
+    background: rgb(198, 189, 177);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -107,8 +107,9 @@ h3 {
 
 .my-services {
     height: 100vh;
-} */
-/* .about-me {
+}
+
+.about-me {
     height: 100vh;
 } */
 
