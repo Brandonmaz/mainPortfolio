@@ -12,7 +12,7 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
-    --clr-dark: #171717;
+    --clr-dark: #0f0f0f;
     --clr-accent: rgb(47, 191, 244);
 
     --fs-h1: 3rem;
@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    background: rgb(198, 189, 177);
+    background: rgb(188, 175, 157);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -101,12 +101,12 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-/* .intro {
-    height: 100vh;
+.intro {
+    height: 100%;
 }
 
-.my-services {
-    height: 100vh;
+/* .my-services {
+    height: 95vh;
 }
 
 .about-me {
