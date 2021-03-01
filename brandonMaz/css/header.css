@@ -59,19 +59,19 @@
 }
 
 .nav-wrapper.active ul {
-    width: 520px;
+    width: 550px;
 }
 
 .navigation li {
-    font-size: 22px;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 0 11px 0 -15px;
 }
 
 a {
     color: var(--clr-dark);
     text-decoration: none;
     transition: .3s;
-    padding: 10px;
+    padding: 17px;
 }
 
 .navigation a:hover {
@@ -81,9 +81,9 @@ a {
 .nav-toggler {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 48px;
-    padding: 14px 5px;
+    width: 2px;
+    /* height: 5px; */
+    padding: 10px;
     cursor: pointer;
 }
 
@@ -96,12 +96,12 @@ a {
     content: '';
     position: relative;
     display: block;
-    width: 35px;
-    height: 6px;
+    width: 25px;
+    height: 5px;
     background-color: var(--clr-accent);
     transition: .4s cubic-bezier(.77, 0, .18, 1);
     text-align: center;
-    margin-left: -15px;
+    margin-left: -25px;
 }
 
 .nav-toggler::after {
