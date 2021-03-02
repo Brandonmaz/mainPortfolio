@@ -116,6 +116,7 @@ h3 {
 .section_title {
     font-weight: var(--fw-reg);
     margin-bottom: .25em;
+    margin-top: .35em;
 }
 
 .section_title-intro strong {
