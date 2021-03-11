@@ -6,17 +6,18 @@
 
 .portfolio {
     display: grid;
-    grid-gap: 5px 5px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    grid-gap: 3px 3px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-radius: 5px;
 }
 
 .portfolio_item {
-    /* background: var(--clr-accent); */
     z-index: 2;
     overflow: hidden;
     transition: transform 500ms ease-in-out;
     filter: var(--isl);
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .portfolio_item:hover {
