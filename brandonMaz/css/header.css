@@ -31,8 +31,8 @@
     position: fixed;
     z-index: 3;
     top: 0;
-    /* display: flex;
-    justify-content: flex-end; */
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -47,6 +47,8 @@
     align-items: center;
     outline: none;
     margin: 1em 1em 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-wrapper ul {
