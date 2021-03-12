@@ -6,7 +6,7 @@
 
 .home-link {
     border: none;
-    filter: var(--isl);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
 }
 
 .nav-wrapper {
@@ -129,15 +129,13 @@ a {
         margin: 10px 1px 0px -15px;
     }
 
-    .navigation {
-        margin: .5em .5em 0 0;
-        background-color: rgba(0, 0, 0, 0);
+    header {
+        margin-bottom: -50px;
     }
 
     .logo {
         max-width: 35px;
-        filter: drop-shadow(1px 1px 3px rgb(156, 156, 156));
-        margin: .5em;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
     }
 
     .nav-wrapper.active ul {
