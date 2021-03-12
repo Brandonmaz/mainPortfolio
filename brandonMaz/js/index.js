@@ -11,9 +11,9 @@
 // })
 const navWrapper = document.querySelector('.nav-wrapper')
 const navLinks = document.querySelectorAll('.nav_link')
-const navToggler =  document.querySelector('.nav-toggler')
+const navToggler =  document.querySelector('.navigation')
 
-navToggler.addEventListener('click', function (event) {
+navToggler.addEventListener('click', (event) => {
     navWrapper.classList.toggle('active')
 })
 
