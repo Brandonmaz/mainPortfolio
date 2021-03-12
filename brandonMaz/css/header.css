@@ -37,11 +37,10 @@
 }
 
 .navigation {
-    max-width: 600px;
+    /* max-width: 600px; */
     border-radius: 5px;
     filter: var(--isl);
     background-color: rgb(219, 211, 201);
-    /* padding-right: 30px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,11 +61,12 @@
 
 .nav-wrapper.active ul {
     width: 550px;
+    height: 60px;
 }
 
 .navigation li {
     font-size: 20px;
-    margin: 0 11px 0 -15px;
+    margin: 15px 11px 0 -15px;
 }
 
 a {
@@ -82,11 +82,9 @@ a {
 
 .nav-toggler {
     position: relative;
-    display: inline-block;
-    width: 2px;
-    /* height: 5px; */
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
+
 }
 
 .nav-wrapper:not(.active) .nav-toggler {
@@ -98,7 +96,7 @@ a {
     content: '';
     position: relative;
     display: block;
-    width: 25px;
+    width: 45px;
     height: 5px;
     background-color: var(--clr-accent);
     transition: .4s cubic-bezier(.77, 0, .18, 1);
@@ -107,7 +105,7 @@ a {
 }
 
 .nav-toggler::after {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .nav-wrapper.active .nav-toggler::before,
