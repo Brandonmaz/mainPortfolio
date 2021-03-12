@@ -146,12 +146,14 @@ a {
         height: 35px;
         background-color: rgba(219, 211, 201, 0.8);
         border-radius: 5px;
+        margin-right: 10px;
     }
 
     .nav-toggler::before,
     .nav-toggler::after {
         width: 30px;
         height: 3px;
+        margin-left: -20px;
     }
 
     .nav-wrapper.active .nav-toggler::before,
