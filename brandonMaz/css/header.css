@@ -37,7 +37,7 @@
 }
 
 .navigation {
-    /* max-width: 600px; */
+    max-width: 600px;
     border-radius: 5px;
     filter: var(--isl);
     background-color: rgb(219, 211, 201);
@@ -138,7 +138,8 @@ a {
     }
 
     .nav-wrapper.active ul {
-        width: 300px;
+        /* width: 300px; */
+        height: 15px;
     }
 
     .nav-toggler::before,
