@@ -34,8 +34,6 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
-    padding: 0;
 }
 
 .language-list {
@@ -50,6 +48,7 @@
 
 .language-img {
     width: 4em;
+    margin-left: 2em;
 }
 
 @media (min-width: 1200px) {
