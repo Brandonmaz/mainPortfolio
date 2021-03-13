@@ -1,6 +1,6 @@
 .my-services {
     /* background: var(--clr-dark); */
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .8));
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
@@ -30,7 +30,29 @@
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+.language {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.language-list {
+    list-style-type: none;
+}
+
+.language-item {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.language-img {
+    width: 3em;
+}
+
+@media (min-width: 1200px) {
     .services {
         display: flex;
         max-width: 70vw;
