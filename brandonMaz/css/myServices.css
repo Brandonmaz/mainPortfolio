@@ -102,4 +102,9 @@
         grid-area: img;
         position: relative;
     }
+
+    .language-img {
+        width: 3em;
+        margin-left: 2em;
+    }
 }
