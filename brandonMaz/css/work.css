@@ -50,7 +50,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: var(--clr-accent);
+    background-color: rgb(188, 175, 157);
 }
 
 a:hover .overlay {
