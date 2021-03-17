@@ -28,10 +28,16 @@
 }
 
 .social-list_item {
-    margin: 0 2em;
+    margin: 0 .5em;
     transition: transform 300ms ease-in-out;
 }
 
 .social-list_link {
     font-size: var(--fs-h2);
+}
+
+@media (min-width: 900px) {
+    .social-list_item {
+        margin: 3em;
+    }
 }

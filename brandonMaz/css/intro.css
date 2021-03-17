@@ -11,6 +11,10 @@
     display: inline-block;
 }
 
+.intro_img {
+    width: 350px;
+}
+
 @media (min-width: 880px) {
     .intro {
         display: grid;
@@ -25,16 +29,9 @@
 
     .intro_img {
         grid-area: img;
-        min-width: 450px;
+        min-width: 550px;
         position: relative;
-        padding: 10px;
-    }
-
-    .portfolio-intro_img {
-        grid-area: img;
-        min-width: 450px;
-        position: relative;
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .section_subtitle-intro {
