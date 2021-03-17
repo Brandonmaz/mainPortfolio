@@ -1,5 +1,6 @@
 .intro {
     position: relative;
+    margin-bottom: 100px;
 }
 
 .intro_img,
@@ -25,6 +26,7 @@
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+
     }
 
     .intro_img {
