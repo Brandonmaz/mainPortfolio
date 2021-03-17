@@ -1,6 +1,6 @@
 .intro {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .intro_img,
@@ -16,7 +16,14 @@
     width: 350px;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 400px) {
+    .intro {
+        position: relative;
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width: 600px) and (min-width: 820px) {
     .intro {
         display: grid;
         width: min-content;
@@ -31,9 +38,9 @@
 
     .intro_img {
         grid-area: img;
-        min-width: 550px;
+        min-width: 250px;
         position: relative;
-        /* padding: 10px; */
+        /* margin-top: -200px; */
     }
 
     .section_subtitle-intro {
@@ -46,5 +53,13 @@
         width: calc(100% + 1.5em);
         padding: 15px;
         border-radius: 5px;
+    }
+}
+
+@media (min-width: 820px) {
+    .intro_img {
+        grid-area: img;
+        min-width: 450px;
+        position: relative;
     }
 }
