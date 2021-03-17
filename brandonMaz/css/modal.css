@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* modal */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 3;
+}
+
+/* display the modal overlay when the input[type=radio] is checked */
+.modal__state:checked+.modal__overlay {
+    opacity: 1;
+    animation: fade-in 0.6s;
+    display: block;
+}
+
+.modal {
+    position: relative;
+    margin: 50px;
+    margin-top: 80px;
+    padding: 40px 20px;
+    text-align: left;
+    filter: var(--is);
+}
+
+.modal__close {
+    position: relative;
+    top: 40px;
+}
+
+.modal__overlay-close {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* the input[type=radio] that's toggled when the label is clicked */
+.modal__state {
+    display: none;
+}
+
+/* close button */
+.button--close {
+    padding: 0.5em 0.7em;
+    background-color: #8a0917;
+    box-shadow: 0 4px 0 #5a060f;
+    color: #fff;
+}
+
+.button--inline {
+    padding: 0.25em 0.5em;
+}
+
+.button--close:hover,
+.button--close:focus {
+    background-color: #ba0c1f;
+    box-shadow: 0 4px 0 #8a0917;
+}
+
+.button--close:active {
+    box-shadow: 0 0 0 #8a0917;
+}
+
+.fa-graduation-cap {
+    margin-top: 10px;
+    font-size: 2.5em;
+}
+
+@media (min-width: 800px) {
+    .fa-graduation-cap {
+        margin-top: 10px;
+        font-size: 4em;
+    }
+}

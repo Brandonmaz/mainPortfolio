@@ -15,7 +15,10 @@
         <link rel="stylesheet" href="brandonMaz/css/myServices.css">
         <link rel="stylesheet" href="brandonMaz/css/intro.css">
         <link rel="stylesheet" href="brandonMaz/css/header.css">
+        <link rel="stylesheet" href="brandonMaz/css/modal.css">
         <script src="https://kit.fontawesome.com/7b72964dce.js" crossorigin="anonymous"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
         
     </head>
     <body>
@@ -213,11 +216,12 @@
 <!-- Footer  -->
         <footer class="footer">
             <ul class="social-list">
-                <li class="social-list_item github">
+                <li class="bs-example social-list_item github" data-toggler="popover" title="Modal Short Text">
                     <a class="social-list_link" href="https://github.com/Brandonmaz?tab=repositories" target="_newtab">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
+                </div>
                 <li class="social-list_item linkedin">
                     <a class="social-list_link" href="https://linkedin.com/in/brandonmazikowski" target="_newtab">
                         <i class="fab fa-linkedin"></i>
@@ -230,9 +234,18 @@
                 </li>
                 <li class="social-list_item resume">
                     <a class="social-list_link" href="brandonMaz/img/resume.pdf" target="_newtab" download>
-                        <i class="far fa-file"></i>
+                        <i class="far fa-file-pdf popover__title"></i>
                     </a>
                 </li>
+                    <label class="social-list_item" for="modal__state"><i class="fas fa-graduation-cap"></i></label>
+                    <input type="checkbox" name="modal__state" id="modal__state" class="modal__state">
+                    <div class="modal__overlay">
+                        <label for="modal__state" class="modal__overlay-close"></label>
+                        <div class="modal">
+                            <label class="button button--close modal__close" for="modal__state"><i class="fa fa-times"></i></label>
+                            <img src="brandonMaz/img/certification.png">
+                        </div>
+                    </div>
             </ul>
             <br />
             <p>Website created by Brandon Mazikowski using HTML/CSS/JS</p>
