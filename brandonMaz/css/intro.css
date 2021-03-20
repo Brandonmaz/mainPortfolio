@@ -1,4 +1,4 @@
-.intro {
+#home.intro {
     position: relative;
     margin-bottom: 30px;
 }
@@ -17,13 +17,25 @@
 }
 
 @media (min-width: 400px) {
-    .intro {
+    #home.intro {
         position: relative;
         margin-bottom: 250px;
     }
 }
 
 @media (min-width: 600px) and (min-width: 820px) {
+    #home.intro {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+
+    }
+
     .intro {
         display: grid;
         width: min-content;
@@ -40,7 +52,6 @@
         grid-area: img;
         min-width: 250px;
         position: relative;
-        /* margin-top: -200px; */
     }
 
     .section_subtitle-intro {
@@ -61,5 +72,15 @@
         grid-area: img;
         min-width: 450px;
         position: relative;
+        margin-top: 5em;
     }
+
+    .section_title-intro {
+        margin-top: 2em;
+    }
+
+    /* .section_subtitle-intro {
+        display: inline-block;
+        margin-top: -5em;
+    } */
 }
